@@ -16,9 +16,9 @@
 <body>
   <!--Header section-->
   <header class="main-header">
-    <!--My custom container with 3 blocks: container-left:7.5%, container-middle: 85%, container-right:7.5%-->
+    <!--My custom container with 3 blocks: container-small:7.5%, container-big: 85%-->
     <div class="r-container">
-      <div class="container-middle">
+      <div class="container-big">
         <!--Navigation-->
         <div class="row">
           <div class="col-md-6">
@@ -49,10 +49,10 @@
           <div class="col-md-12">
             <article class="banner">
               <!--Image-->
-              <div class="image">
+              <figure class="image">
                 <!--TODO: add img and alt-->
                 <img src="#" alt="">
-              </div>
+              </figure>
               <!--Content-->
               <div class="banner-content">
                 <div class="inscription">your</div>
@@ -71,7 +71,7 @@
         </div>
       </div>
       <!--Right-side of header-->
-      <div class="container-right">
+      <div class="container-small right">
         <div class="row">
           <div class="col-md-12">
             <div class="contacts">
@@ -94,12 +94,12 @@
   <main class="page-content">
     <section class="media">
       <div class="container-middle middle">
+        <!--Quote-->
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="quote">
               <blockquote class="blockquote">
-                Surfing is the most blissful experience you can have on this planet, 
-                a taste of heaven.
+                Surfing is the most blissful experience you can have on this planet, a taste of heaven.
               </blockquote>
               <address class="quote-author">
                 John McCarthy
@@ -107,7 +107,106 @@
             </div>
           </div>
         </div>
-        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row media-content">
+          <article class="media-capture col-md-6">
+            <figure class="image">
+              <!--TODO: add link to image-->
+              <img src="#" alt="">
+            </figure>
+            <p class="content">
+              By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
+            </p>
+            <!--TODO: add link to full article-->
+            <a href="" class="r-btn show-all-btn">read more</a>
+          </article>
+          <!-- 16:9 aspect ratio -->
+          <div class="media-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!--TODO: add video-->
+              <iframe class="embed-responsive-item" src="..."></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <header class="shop-header">
+        <div class="inscription">
+          shop
+        </div>
+        <h2 class="title">Surfboards</h2>
+      </header>
+      <div class="r-container">
+        <div class="container-small left">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </div>
+        <div class="container-big middle">
+          <article class="board">
+            <div class="scene"></div>
+            <div class="content">
+              <figure class="board-image">
+                <!--TODO: add image link-->
+                <img src="#" alt="">
+              </figure>
+              <div class="text">
+                <div class="board-type">funboards</div>
+                <div class="board-name">Chilli Rare Bird</div>
+                <div class="price">
+                  <div class="price-val">$890</div>
+                  <!--TODO: add link to buy page-->
+                  <a href="#" class="r-btn"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--FIXME: change board-->
+          <article class="board">
+            <div class="scene"></div>
+            <div class="content">
+              <figure class="board-image">
+                <!--TODO: add image link-->
+                <img src="#" alt="">
+              </figure>
+              <div class="text">
+                <div class="board-type">funboards</div>
+                <div class="board-name">Chilli Rare Bird</div>
+                <div class="price">
+                  <div class="price-val">$890</div>
+                  <!--TODO: add link to buy page-->
+                  <a href="#" class="r-btn"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--FIXME: change board-->
+          <article class="board">
+            <div class="scene"></div>
+            <div class="content">
+              <figure class="board-image">
+                <!--TODO: add image link-->
+                <img src="#" alt="">
+              </figure>
+              <div class="text">
+                <div class="board-type">funboards</div>
+                <div class="board-name">Chilli Rare Bird</div>
+                <div class="price">
+                  <div class="price-val">$890</div>
+                  <!--TODO: add link to buy page-->
+                  <a href="#" class="r-btn"></a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="container-small right">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
       </div>
     </section>
   </main>
