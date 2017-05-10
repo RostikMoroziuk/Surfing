@@ -9,6 +9,9 @@ $lightColor: #ebebeb;
 $inscriptionColor: #5da8ef;
 $lineColor: #5da8ef;
 $text-color: #8f8f8f;
+$titleColor: #333;
+$btnBorder: rgba(93, 168, 239, 0.7);
+$boardColor:  #ececec;
 $smallFont: "League Spartan";
 $titleFont: "Playfair Display";
 $textFont: "Poppins",
@@ -37,7 +40,7 @@ body {
 
 .text {
   color: $text-color;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 nav.navbar {
@@ -160,12 +163,12 @@ nav.navbar {
   border: none;
   font-family: $titleFont;
   font-size: 24px;
-  color: #333;
+  color: $titleColor;
 }
 
 .quote-author {
   font-family: $smallFont;
-  color: #333;
+  color: $titleColor;
   font-size: 15px;
   font-weight: 700;
   text-align: center;
@@ -182,6 +185,76 @@ nav.navbar {
   margin-bottom: 60px;
   width: 50%;
 }
+
+.media {
+  margin-bottom: 200px;
+}
+
+.media-content {
+  position: relative;
+  .content {
+    text-align: left;
+  }
+  .text {
+    margin-bottom: 60px;
+  }
+}
+
+.media-video {
+  position: absolute !important;//change bootstrap
+  top: 100px;
+}
+
+.media-capture .image {
+  margin-bottom: 60px;
+}
+
+.r-btn {
+  font-family: $smallFont;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $titleColor;
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.show-all-btn {
+  padding-bottom: 5px;
+  border-bottom: 2px solid $btnBorder;
+}
+
+.shop-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    margin-top: 0;
+  }
+}
+
+.title {
+  font-family: $titleFont;
+  color: $titleColor;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.boards {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.board {
+  width: 250px;
+  height: 320px;
+  margin-right: 186px;
+  background-color: $boardColor;
+}
+
 
 
 /*Media query*/

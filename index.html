@@ -49,7 +49,6 @@
           <div class="col-md-12">
             <!--Display:flex-->
             <figure class="image wrapper">
-              <!--TODO: add img and alt-->
               <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 base">
               <!--Content-->
               <div class="banner-content">
@@ -72,8 +71,6 @@
     </div>
     <!--Right-side of header-->
     <div class="right-side">
-      <!--<div class="row">-->
-      <!--<div class="col-md-1">-->
       <div class="contacts">
         <div class="slogan v-text">First Surfing Magazine</div>
         <ul class="social">
@@ -83,8 +80,6 @@
           <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
         </ul>
       </div>
-      <!--</div>-->
-      <!--</div>-->
     </div>
   </header>
   <!--End header-->
@@ -107,32 +102,33 @@
       </div>
     </div>
     <!--Separate line-->
-    <!--<div class="row">
-      <div class="col-md-6">-->
-        <div class="line"></div>
-      <!--</div>
-    </div>-->
+    <div class="line"></div>
     <!--Photo and video media-section-->
     <section class="media">
-      <div class="container-middle middle">
+      <div class="container">
         <!--Image and video-->
         <div class="row media-content">
           <article class="media-capture col-md-6">
             <figure class="image">
-              <!--TODO: add link to image-->
-              <img src="#" alt="">
+              <img src="img/img.png" alt="surfing">
             </figure>
-            <p class="content">
-              By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
-            </p>
-            <!--TODO: add link to full article-->
-            <a href="" class="r-btn show-all-btn">read more</a>
+            <div class="row">
+              <div class="col-md-7 col-md-offset-2 content">
+                <p class="text">
+                  By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
+                </p>
+                <!--TODO: add link to full article-->
+                <a href="" class="r-btn show-all-btn">read more</a>
+              </div>
+            </div>
           </article>
           <!-- 16:9 aspect ratio -->
-          <div class="media-video">
+          <div class="media-video col-md-7 col-md-offset-5">
             <div class="embed-responsive embed-responsive-16by9">
               <!--TODO: add video-->
-              <iframe class="embed-responsive-item" src="..."></iframe>
+              <video class="embed-responsive-item" controls>
+                <source src="video/SurfingatMuizenberg-DJIPhantom.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
@@ -141,18 +137,15 @@
 
     <!--Shop-->
     <section class="shop">
-      <header class="shop-header">
-        <div class="inscription">
-          shop
-        </div>
-        <h2 class="title">Surfboards</h2>
-      </header>
-      <div class="r-container">
+      <div class="container">
+        <header class="shop-header">
+          <div class="inscription">
+            shop
+          </div>
+          <h2 class="title">Surfboards</h2>
+        </header>
         <!--Boards-->
-        <div class="container-small left">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </div>
-        <div class="container-big middle">
+        <div class="boards">
           <article class="board">
             <div class="scene"></div>
             <div class="content">
@@ -210,14 +203,13 @@
             </div>
           </article>
         </div>
-        <div class="container-small right">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </div>
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <!--TODO: add link to full article-->
+        <footer class="shop-footer">
+          <a href="" class="r-btn show-all-btn">read more</a>
+        </footer>
       </div>
-      <!--TODO: add link to full article-->
-      <footer class="shop-footer">
-        <a href="" class="r-btn show-all-btn">read more</a>
-      </footer>
     </section>
 
     <!--Page information-->
