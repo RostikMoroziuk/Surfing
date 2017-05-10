@@ -233,9 +233,12 @@ nav.navbar {
   justify-content: space-between;
   align-items: center; }
 
-.shop .left, .shop .right {
-  display: block;
-  position: relative; }
+.shop {
+  margin-bottom: 173px; }
+  .shop .left,
+  .shop .right {
+    display: block;
+    position: relative; }
 
 .shop .left {
   left: -4%; }
@@ -246,6 +249,9 @@ nav.navbar {
 .shop-footer {
   display: flex;
   justify-content: center; }
+
+.article-first {
+  display: flex; }
 
 /*Media query*/
 @media (min-width: 1200px) {

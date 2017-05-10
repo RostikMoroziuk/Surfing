@@ -308,9 +308,13 @@ nav.navbar {
   align-items: center;
 }
 
-.shop .left, .shop .right {
-  display: block;
-  position: relative;
+.shop {
+  margin-bottom: 173px;
+  .left,
+  .right {
+    display: block;
+    position: relative;
+  }
 }
 
 .shop .left {
@@ -326,6 +330,9 @@ nav.navbar {
   justify-content: center;
 }
 
+.article-first {
+  display: flex;
+}
 
 
 /*Media query*/
