@@ -7,10 +7,12 @@ $navColor: rgba(11,
 0.9);
 $lightColor: #ebebeb;
 $inscriptionColor: #5da8ef;
+$lineColor: #5da8ef;
 $text-color: #8f8f8f;
 $smallFont: "League Spartan";
 $titleFont: "Playfair Display";
-$textFont: "Poppins", sans-serif;
+$textFont: "Poppins",
+sans-serif;
 * {
   box-sizing: border-box;
 }
@@ -29,12 +31,13 @@ body {
   height: 100%;
 }
 
-.main-header {}
+.main-header {
+  margin-bottom: 190px;
+}
 
 .text {
   color: $text-color;
   font-size: 18px;
-
 }
 
 nav.navbar {
@@ -150,7 +153,35 @@ nav.navbar {
 .slogan {
   white-space: nowrap;
 }
+
 //end fixme
+.blockquote {
+  text-align: center;
+  border: none;
+  font-family: $titleFont;
+  font-size: 24px;
+  color: #333;
+}
+
+.quote-author {
+  font-family: $smallFont;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quote {
+  margin: 0 0 60px;
+}
+
+.line {
+  height: 100px;
+  border-right: 2px solid $lineColor;
+  margin-bottom: 60px;
+  width: 50%;
+}
 
 
 /*Media query*/
