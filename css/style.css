@@ -1,0 +1,120 @@
+@import url("../css/stylesheet.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.text {
+  color: #8f8f8f;
+  font-size: 18px; }
+
+nav.navbar {
+  margin: 0.8% 0;
+  margin: 45px 0; }
+
+.navbar-header .navbar-brand {
+  padding: 0;
+  height: auto; }
+
+.navigation {
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700; }
+  .navigation li {
+    padding-left: 24px;
+    padding-right: 24px; }
+  .navigation li a {
+    color: rgba(11, 12, 17, 0.9);
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .navigation li:last-child {
+    padding-right: 0; }
+  .navigation li:first-child {
+    padding-left: 0; }
+
+.image {
+  position: relative; }
+
+.base {
+  box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2); }
+
+.wrapper {
+  display: flex;
+  align-items: center; }
+
+.banner-content {
+  position: absolute;
+  z-index: 10; }
+
+.r-pagination {
+  position: absolute;
+  bottom: 0; }
+
+.banner-title {
+  font-family: "Playfair Display";
+  font-size: 62px;
+  font-weight: 700;
+  color: rgba(11, 12, 17, 0.9); }
+
+.inscription {
+  color: #5da8ef;
+  text-transform: uppercase;
+  font-size: 15px; }
+
+.r-pagination .glyphicon {
+  color: #ebebeb; }
+
+.current-page {
+  color: #5da8ef; }
+
+.v-text {
+  transform: rotate(-90deg);
+  transform-origin: left top 0; }
+
+.right-side {
+  position: absolute;
+  right: -10px;
+  top: 210px;
+  height: 520px;
+  color: #ebebeb;
+  font-family: "League Spartan";
+  font-weight: 700; }
+  .right-side a {
+    color: #ebebeb; }
+
+.social {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 45px;
+  height: 100%; }
+
+.slogan {
+  white-space: nowrap; }
+
+/*Media query*/
+@media (min-width: 1200px) {
+  body .container {
+    padding: 0;
+    width: 1224px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,163 @@
+@import url("../css/stylesheet.css");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+$navColor: rgba(11,
+12,
+17,
+0.9);
+$lightColor: #ebebeb;
+$inscriptionColor: #5da8ef;
+$text-color: #8f8f8f;
+$smallFont: "League Spartan";
+$titleFont: "Playfair Display";
+$textFont: "Poppins", sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-header {}
+
+.text {
+  color: $text-color;
+  font-size: 18px;
+
+}
+
+nav.navbar {
+  margin: 0.8% 0;
+  margin: 45px 0;
+}
+
+.navbar-header .navbar-brand {
+  padding: 0;
+  height: auto;
+}
+
+.navigation {
+  font-family: $smallFont;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  li {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  li a {
+    color: $navColor; //change bootstrap
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+  li:first-child {
+    padding-left: 0;
+  }
+}
+
+.image {
+  position: relative;
+}
+
+.base {
+  box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  position: absolute;
+  z-index: 10;
+}
+
+.r-pagination {
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-title {
+  font-family: $titleFont;
+  font-size: 62px;
+  font-weight: 700;
+  color: $navColor;
+}
+
+.inscription {
+  color: $inscriptionColor;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.r-pagination .glyphicon {
+  color: $lightColor;
+}
+
+.current-page {
+  color: $inscriptionColor;
+}
+
+//FIXME: not responive
+.v-text {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+
+.right-side {
+  position: absolute;
+  right: -10px;
+  top: 210px;
+  height: 520px;
+  color: $lightColor;
+  font-family: $smallFont;
+  font-weight: 700;
+  a {
+    color: $lightColor;
+  }
+}
+
+.social {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 45px;
+  height: 100%;
+}
+
+.slogan {
+  white-space: nowrap;
+}
+//end fixme
+
+
+/*Media query*/
+
+@media (min-width: 1200px) {
+  body .container {
+    padding: 0;
+    width: 1224px;
+  }
+}

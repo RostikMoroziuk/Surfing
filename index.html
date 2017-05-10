@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <!--TODO: change to CDN-->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="js/bootstrap.js">
@@ -16,76 +17,75 @@
 <body>
   <!--Header section-->
   <header class="main-header">
-    <!--My custom container with 3 blocks: container-small:7.5%, container-big: 85%-->
-    <div class="r-container">
-      <div class="container-big">
-        <!--Navigation-->
-        <div class="row">
-          <div class="col-md-6">
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <!--Logo-->
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html">
-                    <img alt="Brand" src="img/logo.png">
-                  </a>
-                </div>
-                <!--Nav links-->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right navigation">
-                    <!--TODO: add links to other pages-->
-                    <li><a href="#">stories</a></li>
-                    <li><a href="#">events</a></li>
-                    <li><a href="#">places</a></li>
-                    <li><a href="#">boards</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
+    <div class="container">
+      <!--Navigation-->
+      <div class="row">
+        <div class="col-md-6">
+          <nav class="navbar">
+            <!--Logo-->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">
+                <img alt="Brand" src="img/logo.png" class="img-responsive">
+              </a>
+            </div>
+            <!--Nav links-->
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right navigation">
+                <!--TODO: add links to other pages-->
+                <li><a href="#">stories</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">places</a></li>
+                <li><a href="#">boards</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <!--Banner-->
+      </div>
+      <!--Banner-->
+
+      <article class="banner">
         <div class="row">
+          <!--Image-->
           <div class="col-md-12">
-            <article class="banner">
-              <!--Image-->
-              <figure class="image">
-                <!--TODO: add img and alt-->
-                <img src="#" alt="">
-              </figure>
+            <!--Display:flex-->
+            <figure class="image wrapper">
+              <!--TODO: add img and alt-->
+              <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 base">
               <!--Content-->
               <div class="banner-content">
                 <div class="inscription">your</div>
                 <h2 class="banner-title">Beautiful Escape</h2>
-                <p class="description">One of the greatest things about the sport of surfing is that you need only three things: your body, a surfboard,
-                  and a wave.</p>
-                <div class="r-pagination">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="current-page">1</span>
-                  <span class="pages">5</span>
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                </div>
+                <p class="text">One of the greatest things about the sport of surfing is <br>
+                that you need only three things: your body, <br>
+                a surfboard, and a wave.</p>
               </div>
-            </article>
+              <div class="r-pagination">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="current-page">1</span>
+                <span>/</span>
+                <span class="pages">5</span>
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </div>
+            </figure>
           </div>
         </div>
-      </div>
-      <!--Right-side of header-->
-      <div class="container-small right">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="contacts">
-              <div class="slogan">First Surfing Magazine</div>
-              <ul class="social">
-                <!--TODO: add links to social-->
-                <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-          </div>
+      </article>
+    </div>
+    <!--Right-side of header-->
+    <div class="right-side">
+      <!--<div class="row">-->
+      <!--<div class="col-md-1">-->
+        <div class="contacts">
+          <div class="slogan v-text">First Surfing Magazine</div>
+          <ul class="social">
+            <!--TODO: add links to social-->
+            <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
-      </div>
+      <!--</div>-->
+      <!--</div>-->
     </div>
   </header>
   <!--End header-->
