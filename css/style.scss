@@ -40,7 +40,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/background-water.png") no-repeat 0 1572px;
+  background: url("../img/background-water.png") no-repeat 0 1572px, url("../img/surf-bg.png") no-repeat 0 3525px;
 }
 
 .main-header {
@@ -129,8 +129,19 @@ nav.navbar {
 }
 
 .v-text {
-  transform: rotate(-90deg);
-  transform-origin: right top 0;
+  transform: translateX(-130%) rotate(-90deg);
+}
+
+.v-text-right {
+transform-origin: right top 0;
+}
+
+.v-text-left {
+transform-origin: right top 0;
+}
+
+.test {
+  transform: translateX(100%);
 }
 
 .right-side {
@@ -155,6 +166,19 @@ nav.navbar {
   font-weight: 700; // position: absolute;
   white-space: nowrap; // top: -500px;
   text-transform: uppercase;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+}
+
+.caption-right {
+  right: 0;
+}
+
+.caption-left {
+  left: 0;
 }
 
 .social {
@@ -339,25 +363,46 @@ nav.navbar {
   justify-content: center;
 }
 
-.article-first {
+.article-first,
+.article-second {
   display: flex;
-  .article-header {
-    background: url("../img/01.png") no-repeat;
-  }
-}
-
-.caption {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .article-content {
-  width: 27%;
-  margin-left: 70px;
   color: $pageContentColor;
   font-family: $textFont;
   font-size: 14px;
+  width: 27%;
+}
+
+.article-first {
+  margin-bottom: 121px;
+  .article-header {
+    background: url("../img/01.png") no-repeat;
+  }
+  .article-content {
+    margin-left: 70px;
+  }
+  .article-image {
+    width: 62.3%;
+    margin-left: 54px;
+    .caption {
+      right: -2%;
+    }
+  }
+}
+
+.article-second {
+  .article-image {
+    margin-left: 17%;
+    width: 40%;
+  }
+  .article-content {
+    margin-left: 77px;
+  }
+  .article-header {
+    background: url("../img/02.png") no-repeat;
+  }
 }
 
 .article-header {
@@ -377,14 +422,6 @@ nav.navbar {
 
 .article-text {
   margin-bottom: 67px;
-}
-
-.article-image {
-  width: 62.3%;
-  margin-left: 54px;
-  .caption {
-    right: -2%;
-  }
 }
 
 
