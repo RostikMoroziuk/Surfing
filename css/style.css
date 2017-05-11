@@ -15,7 +15,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/background-water.png") no-repeat 0 1572px, url("../img/surf-bg.png") no-repeat 0 3525px; }
+  background: url("../img/background-water.png") no-repeat 0 1572px, url("../img/surf-bg.png") no-repeat 0 3545px; }
 
 .main-header {
   margin-bottom: 180px; }
@@ -30,7 +30,12 @@ nav.navbar {
 
 .navbar-header .navbar-brand {
   padding: 0;
-  height: auto; }
+  padding-top: 3px;
+  height: auto;
+  transition: transform 1s; }
+
+.navbar-brand:hover {
+  transform: rotate(90deg); }
 
 .navigation {
   font-family: "League Spartan";
@@ -40,10 +45,14 @@ nav.navbar {
   .navigation li {
     padding-left: 24px;
     padding-right: 24px; }
-  .navigation li a {
+  .navigation a {
     color: rgba(11, 12, 17, 0.9);
     padding-left: 0 !important;
-    padding-right: 0 !important; }
+    padding-right: 0 !important;
+    transition: color 0.35s; }
+    .navigation a:hover {
+      color: #5da8ef !important;
+      background-color: transparent !important; }
   .navigation li:last-child {
     padding-right: 0; }
   .navigation li:first-child {
@@ -59,6 +68,9 @@ nav.navbar {
   display: flex;
   align-items: center; }
 
+.banner img {
+  width: 83%; }
+
 .banner-content {
   position: absolute;
   z-index: 10; }
@@ -66,6 +78,8 @@ nav.navbar {
 .r-pagination {
   position: absolute;
   bottom: 0; }
+  .r-pagination .glyphicon:hover {
+    color: #5da8ef; }
 
 .banner-title {
   font-family: "Playfair Display";
@@ -162,9 +176,9 @@ nav.navbar {
   .media-content .text {
     margin-bottom: 60px; }
 
-.media-video {
-  position: absolute !important;
-  top: 100px; }
+#mvid {
+  position: absolute;
+  top: 50px; }
 
 .media-capture .image {
   margin-bottom: 60px; }
@@ -203,7 +217,11 @@ input[placeholder]:-ms-input-placeholder {
 
 .show-all-btn {
   padding-bottom: 5px;
-  border-bottom: 2px solid rgba(93, 168, 239, 0.7); }
+  border-bottom: 2px solid rgba(93, 168, 239, 0.7);
+  transition: border-color 1s;
+  white-space: nowrap; }
+  .show-all-btn:hover {
+    border-color: transparent; }
 
 .shop-header {
   display: flex;
@@ -224,11 +242,16 @@ input[placeholder]:-ms-input-placeholder {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 80px; }
+  .boards .glyphicon {
+    color: #ebebeb;
+    align-self: center; }
+    .boards .glyphicon:hover {
+      color: #5da8ef; }
 
 .board {
   width: 250px;
   height: 320px;
-  margin-right: 186px;
+  margin-right: 15%;
   background-color: #ececec;
   position: relative; }
   .board .text {
@@ -256,17 +279,6 @@ input[placeholder]:-ms-input-placeholder {
 
 .price-val {
   color: #ce60a8; }
-
-.arrows {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.spacer {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 .shop {
   margin-bottom: 173px; }
@@ -312,6 +324,8 @@ input[placeholder]:-ms-input-placeholder {
     margin-left: 54px; }
     .article-first .article-image .caption {
       right: -2%; }
+    .article-first .article-image img {
+      float: right; }
 
 .article-second .article-image {
   margin-left: 17%;
@@ -391,7 +405,8 @@ input[placeholder]:-ms-input-placeholder {
   .main-footer .navigation {
     margin-bottom: 40px; }
   .main-footer .social {
-    display: flex; }
+    display: flex;
+    margin-bottom: 95px; }
     .main-footer .social li {
       margin: 0 20px; }
     .main-footer .social a {
@@ -400,9 +415,172 @@ input[placeholder]:-ms-input-placeholder {
         color: #5da8ef; }
 
 /*Media query*/
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   body .container {
     padding: 0;
     width: 1224px; } }
+@media (max-width: 1354px) {
+  .right-side {
+    right: 3%; }
+    .right-side a {
+      color: #ebebeb; }
+    .right-side .caption {
+      top: 20px; } }
+@media (max-width: 1200px) {
+  .boards {
+    justify-content: center; }
+    .boards .glyphicon-chevron-left {
+      margin-right: 20px; }
+    .boards .board:last-of-type {
+      display: none; }
+
+  .article-first .article-content {
+    margin: 0;
+    width: 50%; }
+
+  .article-second .article-image {
+    margin: 0;
+    width: 50%; }
+
+  .article-content {
+    width: 40%; } }
+@media (max-width: 991px) {
+  .image img {
+    width: 100%; }
+
+  .banner-content {
+    padding: 15px;
+    background-color: rgba(204, 204, 204, 0.3); }
+
+  .r-pagination {
+    padding: 10px;
+    background-color: rgba(187, 187, 187, 0.5); }
+
+  #mvid {
+    position: relative;
+    top: 0; }
+
+  .boards .board:nth-child(2) {
+    display: none; }
+
+  .media-capture .image {
+    margin-bottom: 30px; }
+
+  .media-content .text {
+    margin-bottom: 30px; }
+
+  .article-header {
+    margin-bottom: 20px; }
+
+  .article-text {
+    margin-bottom: 30px; }
+
+  .contacts .address {
+    margin: 20px 0 20px 20px; } }
+@media (max-width: 767px) {
+  .navbar-header .navbar-brand {
+    padding-left: 15px; }
+
+  nav.navbar {
+    margin: 0; }
+
+  .navigation li:first-child {
+    padding-left: 24px; }
+
+  .article-first,
+  .article-second {
+    flex-direction: column; }
+
+  .article-first .article-content {
+    width: 100%; }
+
+  .article-second .article-content {
+    width: 100%;
+    margin: 0; }
+
+  .article-first .article-image {
+    margin-top: 10px;
+    width: 80%; }
+
+  .article-second .article-image {
+    margin-top: 10px;
+    margin-left: 54px;
+    width: 80%; }
+
+  .media {
+    margin-bottom: 100px; }
+
+  .contact-info .title {
+    font-size: 25px; }
+  .contact-info .contacts .address {
+    line-height: 20px; }
+
+  .contacts .contact-info {
+    width: 50%; } }
+@media (max-width: 640px) {
+  .banner-title {
+    font-size: 33px; }
+
+  .main-header {
+    margin-bottom: 100px; }
+
+  .boards {
+    margin-bottom: 40px; }
+
+  .shop {
+    margin-bottom: 100px; } }
+@media (max-width: 450px) {
+  .inscription {
+    font-size: 9px; }
+
+  .banner-title {
+    font-size: 20px; }
+
+  .text {
+    font-size: 11px; }
+
+  .slogan {
+    font-size: 9px; }
+
+  .right-side {
+    right: 5%; }
+
+  .right-side .caption {
+    display: none; }
+
+  .r-pagination {
+    padding: 0; }
+
+  .blockquote {
+    font-size: 18px; }
+
+  .r-btn, input[placeholder] {
+    font-size: 9px; }
+
+  .title {
+    font-size: 20px; }
+
+  .board .text {
+    right: auto;
+    top: auto;
+    bottom: -70px; }
+
+  .board .board-name {
+    font-size: 18px; }
+
+  .board .price {
+    margin-top: 0; }
+
+  .boards {
+    margin-bottom: 50px; }
+
+  .shop {
+    margin-bottom: 30px; }
+
+  .contact-info .title {
+    font-size: 18px; }
+
+  .contacts .address {
+    line-height: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

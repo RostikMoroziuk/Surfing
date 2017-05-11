@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!--TODO: change to CDN-->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="js/bootstrap.js">
-  <link rel="stylesheet" href="js/jquery-3.2.1.js">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="https://use.fontawesome.com/d43ae5a69d.js"></script>
   <title>Surfing</title>
 </head>
@@ -20,16 +20,24 @@
     <div class="container">
       <!--Navigation-->
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
           <nav class="navbar">
             <!--Logo-->
             <div class="navbar-header">
+              <!--Button for hide menu on small screens-->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
               <a class="navbar-brand" href="index.html">
                 <img alt="Brand" src="img/logo.png" class="img-responsive">
               </a>
             </div>
             <!--Nav links-->
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right navigation">
                 <!--TODO: add links to other pages-->
                 <li><a href="#">stories</a></li>
@@ -46,10 +54,10 @@
       <article class="banner">
         <div class="row">
           <!--Image-->
-          <div class="col-md-12">
+          <div class="col-md-12 col-lg-12">
             <!--Display:flex-->
             <figure class="image wrapper">
-              <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 base">
+              <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
               <!--Content-->
               <div class="banner-content">
                 <div class="inscription">your</div>
@@ -108,7 +116,7 @@
         <div class="row media-content">
           <article class="media-capture col-md-6">
             <figure class="image">
-              <img src="img/img.png" alt="surfing">
+              <img src="img/img.png" alt="surfing" class="img-responsive">
             </figure>
             <div class="row">
               <div class="col-md-7 col-md-offset-2 content">
@@ -121,7 +129,7 @@
             </div>
           </article>
           <!-- 16:9 aspect ratio -->
-          <div class="media-video col-md-7 col-md-offset-5">
+          <div class="media-video col-md-7 col-md-offset-5" id="mvid">
             <div class="embed-responsive embed-responsive-4by3">
               <!--TODO: add video-->
               <video class="embed-responsive-item" controls>
@@ -144,6 +152,7 @@
         </header>
         <!--Boards-->
         <div class="boards">
+          <span class="glyphicon glyphicon-chevron-left"></span>
           <article class="board">
             <div class="content">
               <figure class="board-image">
@@ -199,13 +208,7 @@
               </div>
             </div>
           </article>
-          <!--FIXME: do not work links-->
-          <div class="arrows">
-            <div class="spacer">
-              <span class="glyphicon glyphicon-chevron-left left"></span>
-              <span class="glyphicon glyphicon-chevron-right right"></span>
-            </div>
-          </div>
+          <span class="glyphicon glyphicon-chevron-right"></span>
         </div>
         <!--TODO: add link to full article-->
         <footer class="shop-footer">
@@ -333,6 +336,8 @@
     </ul>
   </footer>
   <!--End footer-->
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
