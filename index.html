@@ -66,7 +66,7 @@
               </div>
               <!--Right-side of header-->
               <div class="right-side">
-                <div class="slogan caption caption-right v-text v-text-right">First Surfing Magazine</div>
+                <div class="slogan caption caption-right v-text">First Surfing Magazine</div>
                 <ul class="social">
                   <!--TODO: add links to social-->
                   <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
@@ -199,6 +199,7 @@
               </div>
             </div>
           </article>
+          <!--FIXME: do not work links-->
           <div class="arrows">
             <div class="spacer">
               <span class="glyphicon glyphicon-chevron-left left"></span>
@@ -214,7 +215,7 @@
     </section>
 
     <!--Page information-->
-    <section class="page info">
+    <section class="page-info">
       <div class="container">
         <!--First article-->
         <article class="article-first">
@@ -234,7 +235,7 @@
           <div class="article-image">
             <figure class="image">
               <img src="img/training.png" alt="surf training" class="img-responsive">
-              <figcaption class="caption caption-right slogan v-text v-text-right">Surf Camps</figcaption>
+              <figcaption class="caption caption-right slogan v-text">Surf Camps</figcaption>
             </figure>
           </div>
         </article>
@@ -253,8 +254,8 @@
               <h2 class="title">Point Break</h2>
             </div>
             <div class="article-body">
-              <p class="article-text">By better understanding the various aspects of By better understanding the various aspects of surfing, 
-                By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+              <p class="article-text">By better understanding the various aspects of By better understanding the various aspects of surfing, By better
+                understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
               <!--TODO: add link-->
               <a href="#" class="r-btn show-all-btn">Read More</a>
             </div>
@@ -264,24 +265,21 @@
     </section>
 
     <!--Separate line-->
-    <div class="row">
-      <div class="col-md-6">
-        <div class="line"></div>
-      </div>
-    </div>
-
+    <div class="line"></div>
     <!--Club-->
     <section class="club">
-      <div class="row">
-        <div class="r-container">
-          <div class="col-md-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
             <div class="header">
               <h2 class="title">Join the Club</h2>
-              <p class="club-description">By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+              <p class="text">By better understanding the various aspects of surfing, you will improve faster<br> and have more fun in the
+                water.
+              </p>
             </div>
             <form action="post" class="email">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="YOUR E-MAIL">
+                <input type="email" class="form-control" placeholder="your e-mail">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-chevron-right"></span></button>
                 </span>
@@ -296,46 +294,50 @@
     <section class="contacts">
       <!--Image-->
       <figure class="image">
-        <!--TODO: add image-->
-        <img src="#" alt="">
+        <img src="img/our-camp.png" alt="our camp" class="img-responsive">
       </figure>
       <!--Contacts-->
       <div class="contact-info">
         <div class="inscription">Our Camp</div>
-        <p class="address">CA 91932, USA<br> Imperial Beach<br> 560 Silver Strand Blvd
+        <p class="address title">CA 91932, USA<br> Imperial Beach<br> 560 Silver Strand Blvd
         </p>
-        <a href="" class="r-btn show-all-btn">get in touch</a>
+        <div>
+          <a href="#" class="r-btn show-all-btn">get in touch</a>
+        </div>
       </div>
+
     </section>
   </main>
   <!--End main-->
 
   <!--Footer section-->
   <footer class="main-footer">
-    <!--Logo-->
-    <div class="row">
-      <div class="brand">
-        <img alt="Brand" src="img/logo.png">
+    <div class="container">
+      <!--Logo-->
+      <div class="row">
+        <div class="brand">
+          <img alt="Brand" src="img/logo.png">
+        </div>
       </div>
-    </div>
-    <!--Navigation-->
-    <div class="row">
-      <ul class="navigation">
-        <!--TODO: add links to other pages-->
-        <li><a href="#">stories</a></li>
-        <li><a href="#">events</a></li>
-        <li><a href="#">places</a></li>
-        <li><a href="#">boards</a></li>
-      </ul>
-    </div>
-    <!--Social-->
-    <div class="row">
-      <ul class="social">
-        <!--TODO: add links to social-->
-        <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-      </ul>
+      <!--Navigation-->
+      <div class="row">
+        <ul class="navigation">
+          <!--TODO: add links to other pages-->
+          <li><a href="#">stories</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="#">places</a></li>
+          <li><a href="#">boards</a></li>
+        </ul>
+      </div>
+      <!--Social-->
+      <div class="row">
+        <ul class="social">
+          <!--TODO: add links to social-->
+          <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <!--End footer-->
