@@ -85,34 +85,31 @@ nav.navbar {
 
 .v-text {
   transform: rotate(-90deg);
-  transform-origin: left top 0; }
+  transform-origin: right top 0; }
 
 .right-side {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 0;
   position: absolute;
-  right: -10px;
-  top: 210px;
-  height: 520px;
-  color: #ebebeb;
-  font-family: "League Spartan";
-  font-weight: 700; }
+  right: -3%; }
   .right-side a {
     color: #ebebeb; }
+  .right-side .caption {
+    top: -75px; }
+
+.slogan {
+  color: #ebebeb;
+  font-family: "League Spartan";
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase; }
 
 .social {
   list-style: none;
   list-style-position: inside;
   padding: 0; }
-
-.contacts {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 45px;
-  height: 100%; }
-
-.slogan {
-  white-space: nowrap; }
 
 .blockquote {
   text-align: center;
@@ -252,9 +249,44 @@ nav.navbar {
 
 .article-first {
   display: flex; }
+  .article-first .article-header {
+    background: url("../img/01.png") no-repeat; }
+
+.caption {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.article-content {
+  width: 27%;
+  margin-left: 70px;
+  color: rgba(97, 97, 97, 0.65);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px; }
+
+.article-header {
+  height: 136px;
+  margin-top: 15px;
+  margin-bottom: 34px;
+  position: relative; }
+  .article-header .title {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 11px; }
+    .article-header .title:first-letter {
+      border-bottom: 2px solid #5da8ef; }
+
+.article-text {
+  margin-bottom: 67px; }
+
+.article-image {
+  width: 62.3%;
+  margin-left: 54px; }
+  .article-image .caption {
+    right: -2%; }
 
 /*Media query*/
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   body .container {
     padding: 0;
     width: 1224px; } }

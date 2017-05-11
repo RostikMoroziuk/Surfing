@@ -16,7 +16,10 @@ $btnBorder: rgba(93,
 0.7);
 $boardColor: #ececec;
 $priceColor: #ce60a8;
-;
+$pageContentColor: rgba(97,
+97,
+97,
+0.65); //article 1 and article 2
 $smallFont: "League Spartan";
 $titleFont: "Playfair Display";
 $textFont: "Poppins",
@@ -124,23 +127,33 @@ nav.navbar {
   color: $inscriptionColor;
 }
 
-//FIXME: not responive
 .v-text {
   transform: rotate(-90deg);
-  transform-origin: left top 0;
+  transform-origin: right top 0;
 }
 
 .right-side {
+  //flex only for social!
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 0;
   position: absolute;
-  right: -10px;
-  top: 210px;
-  height: 520px;
-  color: $lightColor;
-  font-family: $smallFont;
-  font-weight: 700;
+  right: -3%;
   a {
     color: $lightColor;
   }
+  .caption {
+    top: -75px;
+  }
+}
+
+.slogan {
+  color: $lightColor;
+  font-family: $smallFont;
+  font-weight: 700; // position: absolute;
+  white-space: nowrap; // top: -500px;
+  text-transform: uppercase;
 }
 
 .social {
@@ -149,19 +162,14 @@ nav.navbar {
   padding: 0;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 45px;
-  height: 100%;
-}
-
-.slogan {
-  white-space: nowrap;
-}
-
+// .contacts {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   justify-content: space-between;
+//   width: 45px;
+//   height: 100%;
+// }
 //end fixme
 .blockquote {
   text-align: center;
@@ -332,12 +340,56 @@ nav.navbar {
 
 .article-first {
   display: flex;
+  .article-header {
+    background: url("../img/01.png") no-repeat;
+  }
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.article-content {
+  width: 27%;
+  margin-left: 70px;
+  color: $pageContentColor;
+  font-family: $textFont;
+  font-size: 14px;
+}
+
+.article-header {
+  height: 136px;
+  margin-top: 15px;
+  margin-bottom: 34px;
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 11px;
+    &:first-letter {
+      border-bottom: 2px solid $lineColor;
+    }
+  }
+}
+
+.article-text {
+  margin-bottom: 67px;
+}
+
+.article-image {
+  width: 62.3%;
+  margin-left: 54px;
+  .caption {
+    right: -2%;
+  }
 }
 
 
 /*Media query*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   body .container {
     padding: 0;
     width: 1224px;
