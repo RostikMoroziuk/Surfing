@@ -382,6 +382,23 @@ input[placeholder]:-ms-input-placeholder {
   .contacts .r-btn {
     color: #5da8ef; }
 
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-footer .brand {
+    margin-bottom: 35px; }
+  .main-footer .navigation {
+    margin-bottom: 40px; }
+  .main-footer .social {
+    display: flex; }
+    .main-footer .social li {
+      margin: 0 20px; }
+    .main-footer .social a {
+      color: #ebebeb; }
+      .main-footer .social a:hover {
+        color: #5da8ef; }
+
 /*Media query*/
 @media (min-width: 1300px) {
   body .container {
