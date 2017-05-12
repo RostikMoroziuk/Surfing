@@ -406,7 +406,6 @@ if (typeof jQuery === 'undefined') {
   Carousel.prototype.next = function () {
     if (this.sliding) return
     var curPage = $('.current-page').text();
-    console.log(curPage);
     curPage++;
     if(curPage===6)
         curPage=1;

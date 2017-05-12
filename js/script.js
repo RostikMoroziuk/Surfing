@@ -40,3 +40,7 @@ $('.boards').slick({
         }
     ]
 });
+
+AOS.init({
+    duration: 1500
+});

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <!--TODO: change to CDN-->
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="js/jquery-3.2.1.js"></script>
@@ -122,58 +123,61 @@
   <!--Main section-->
   <main class="page-content">
     <!--Quote-->
-    <div class="container">
-      <div class="row centering">
-        <div class="col-md-6">
-          <div class="quote">
-            <blockquote class="blockquote">
-              Surfing is the most blissful experience you can have<br> on this planet, a taste of heaven.
-            </blockquote>
-            <address class="quote-author">
-              John McCarthy
-            </address>
+    <div data-aos="fade-up">
+      <div class="container">
+        <div class="row centering">
+          <div class="col-md-6">
+            <div class="quote">
+              <blockquote class="blockquote">
+                Surfing is the most blissful experience you can have<br> on this planet, a taste of heaven.
+              </blockquote>
+              <address class="quote-author">
+                John McCarthy
+              </address>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--Separate line-->
-    <div class="centering">
-      <div class="line"></div>
-    </div>
-    <!--Photo and video media-section-->
-    <section class="media">
-      <div class="container">
-        <!--Image and video-->
-        <div class="row media-content">
-          <article class="media-capture col-md-6">
-            <figure class="image">
-              <img src="img/img.png" alt="surfing" class="img-responsive">
-            </figure>
-            <div class="row">
-              <div class="col-md-7 col-md-offset-2 content">
-                <p class="text">
-                  By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
-                </p>
-                <!--TODO: add link to full article-->
-                <a href="" class="r-btn show-all-btn">read more</a>
+      <!--Separate line-->
+      <div class="centering">
+        <div class="line"></div>
+      </div>
+
+      <!--Photo and video media-section-->
+      <section class="media">
+        <div class="container">
+          <!--Image and video-->
+          <div class="row media-content">
+            <article class="media-capture col-md-6">
+              <figure class="image">
+                <img src="img/img.png" alt="surfing" class="img-responsive">
+              </figure>
+              <div class="row" data-aos="zoom-in">
+                <div class="col-md-7 col-md-offset-2 content">
+                  <p class="text">
+                    By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
+                  </p>
+                  <!--TODO: add link to full article-->
+                  <a href="" class="r-btn show-all-btn">read more</a>
+                </div>
+              </div>
+            </article>
+            <!-- 16:9 aspect ratio -->
+            <div class="media-video col-md-7 col-md-offset-5" id="mvid">
+              <div class="embed-responsive embed-responsive-4by3">
+                <!--TODO: add video-->
+                <video class="embed-responsive-item" controls>
+                  <source src="video/SurfingatMuizenberg-DJIPhantom.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
-          </article>
-          <!-- 16:9 aspect ratio -->
-          <div class="media-video col-md-7 col-md-offset-5" id="mvid">
-            <div class="embed-responsive embed-responsive-4by3">
-              <!--TODO: add video-->
-              <video class="embed-responsive-item" controls>
-                <source src="video/SurfingatMuizenberg-DJIPhantom.mp4" type="video/mp4">
-              </video>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!--Shop-->
-    <section class="shop">
+    <section class="shop" data-aos="fade-up">
       <div class="container">
         <div class="shop-header">
           <div class="inscription">
@@ -318,7 +322,7 @@
     <section class="page-info">
       <div class="container">
         <!--First article-->
-        <article class="article-first">
+        <article class="article-first" data-aos="fade-right">
           <!--Content-->
           <div class="article-content">
             <div class="article-header clearfix">
@@ -340,7 +344,7 @@
           </div>
         </article>
         <!--Second article-->
-        <article class="article-second">
+        <article class="article-second" data-aos="fade-left">
           <!--Image-->
           <div class="article-image">
             <figure class="image">
@@ -367,7 +371,7 @@
     <!--Separate line-->
     <div class="line"></div>
     <!--Club-->
-    <section class="club">
+    <section class="club" data-aos="zoom-in-up">
       <div class="container">
         <div class="row centering">
           <div class="col-xs-12 col-md-9 col-lg-6">
@@ -391,7 +395,7 @@
     </section>
 
     <!--Contacts section-->
-    <section class="contacts">
+    <section class="contacts" data-aos="zoom-in-up">
       <!--Image-->
       <figure class="image">
         <img src="img/our-camp.png" alt="our camp" class="img-responsive">
@@ -411,7 +415,7 @@
   <!--End main-->
 
   <!--Footer section-->
-  <footer class="main-footer container">
+  <footer class="main-footer container" data-aos="fade-up">
     <!--Logo-->
     <div class="brand">
       <img alt="Brand" src="img/logo.svg">
@@ -435,6 +439,7 @@
   <!--End footer-->
 
   <script src="js/slick.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 
