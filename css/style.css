@@ -18,6 +18,10 @@ body {
   background: url("../img/background-water.png") no-repeat 0 1572px, url("../img/surf-bg.png") no-repeat 0 3545px;
   min-width: 320px; }
 
+.centering {
+  display: flex;
+  justify-content: center; }
+
 .main-header {
   margin-bottom: 180px; }
 

@@ -44,6 +44,11 @@ body {
   min-width: 320px;
 }
 
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
 .main-header {
   margin-bottom: 180px;
 }
