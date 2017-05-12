@@ -396,7 +396,7 @@ input[placeholder]:-ms-input-placeholder {
 }
 
 .board {
-  width: 250px;
+  width: 215px;
   height: 320px;
   margin-right: 15%;
   background-color: $boardColor;
@@ -611,13 +611,14 @@ input[placeholder]:-ms-input-placeholder {
 //Medium
 @media (max-width: 1199px) {
   .boards {
-    justify-content: space-around;
+    justify-content: center;
     .glyphicon-chevron-left {
       margin-right: 20px;
     }
-    .board:last-of-type {
-      display: none;
-    }
+  }
+  .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
   }
   .article-first .article-content {
     margin: 0;
@@ -648,11 +649,6 @@ input[placeholder]:-ms-input-placeholder {
   #mvid {
     position: relative;
     top: 0;
-  }
-  .boards {
-    .board:nth-child(2) {
-      display: none;
-    }
   }
   .media-capture .image {
     margin-bottom: 30px;
@@ -730,6 +726,15 @@ input[placeholder]:-ms-input-placeholder {
   }
   .boards {
     margin-bottom: 40px;
+    height: 585px;
+  }
+  .board .text {
+    left: 0;
+    top: auto;
+    bottom: -80px;
+  }
+  .board .price {
+    margin-top: 0;
   }
   .shop {
     margin-bottom: 100px;
@@ -771,6 +776,11 @@ input[placeholder]:-ms-input-placeholder {
   .blockquote {
     font-size: 18px;
   }
+  .board .text {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+  }
   .r-btn,
   input[placeholder] {
     font-size: 9px;
@@ -778,20 +788,11 @@ input[placeholder]:-ms-input-placeholder {
   .title {
     font-size: 20px;
   }
-  .board .text {
-    left: 0;
-    top: auto;
-    bottom: -70px;
-  }
   .board .board-name {
     font-size: 18px;
-  }
-  .board .price {
-    margin-top: 0;
-  }
-  .boards {
-    margin-bottom: 50px;
-  }
+  } // .boards {
+  //   margin-bottom: 50px;
+  // }
   .shop {
     margin-bottom: 30px;
   }
