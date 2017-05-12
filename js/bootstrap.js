@@ -405,11 +405,21 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.prototype.next = function () {
     if (this.sliding) return
+    var curPage = $('.current-page').text();
+    curPage++;
+    if(curPage===6)
+        curPage=1;
+    $('.current-page').text(curPage);
     return this.slide('next')
   }
 
   Carousel.prototype.prev = function () {
     if (this.sliding) return
+    var curPage = $('.current-page').text();
+    curPage--;
+    if(curPage===0)
+        curPage=$('.pages').text();
+    $('.current-page').text(curPage);
     return this.slide('prev')
   }
 

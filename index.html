@@ -50,14 +50,35 @@
         </div>
       </div>
       <!--Banner-->
-
       <article class="banner">
         <div class="row">
           <!--Image-->
           <div class="col-md-12 col-lg-12">
             <!--Display:flex-->
             <figure class="image wrapper">
-              <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+
+              <!--Carousel-->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/base.png" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+                  </div>
+                  <div class="item">
+                    <img src="http://placehold.it/1016x572" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+                  </div>
+                  <div class="item">
+                    <img src="http://placehold.it/1016x572" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+                  </div>
+                  <div class="item">
+                    <img src="http://placehold.it/1016x572" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+                  </div>
+                  <div class="item">
+                    <img src="http://placehold.it/1016x572" alt="wave" class="img-responsive col-md-offset-2 col-lg-offset-2 base">
+                  </div>
+                </div>
+              </div>
+              <!--End Carousel-->
+
               <!--Content-->
               <div class="banner-content">
                 <div class="inscription">your</div>
@@ -65,13 +86,21 @@
                 <p class="text">One of the greatest things about the sport of surfing is <br> that you need only three things: your body,
                   <br> a surfboard, and a wave.</p>
               </div>
+
+              <!--Carousel control-->
               <div class="r-pagination">
-                <span class="glyphicon glyphicon-chevron-left"></span>
+                <a class="left" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
                 <span class="current-page">1</span>
                 <span>/</span>
                 <span class="pages">5</span>
-                <span class="glyphicon glyphicon-chevron-right"></span>
+                <a class="right" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
               </div>
+              <!--Carousel control end-->
+
               <!--Right-side of header-->
               <div class="right-side">
                 <div class="slogan caption caption-right v-text">First Surfing Magazine</div>
@@ -108,7 +137,9 @@
       </div>
     </div>
     <!--Separate line-->
-    <div class="centering"><div class="line"></div></div>
+    <div class="centering">
+      <div class="line"></div>
+    </div>
     <!--Photo and video media-section-->
     <section class="media">
       <div class="container">
@@ -153,6 +184,7 @@
         <!--Boards-->
         <div class="boards">
           <span class="glyphicon glyphicon-chevron-left"></span>
+          <!--<div class="boards-slider">-->
           <article class="board">
             <div class="content">
               <figure class="board-image">
@@ -208,6 +240,7 @@
               </div>
             </div>
           </article>
+          <!--</div>-->
           <span class="glyphicon glyphicon-chevron-right"></span>
         </div>
         <!--TODO: add link to full article-->
@@ -337,6 +370,7 @@
   </footer>
   <!--End footer-->
 
+  <script src="js/slick.js"></script>
   <script src="js/script.js"></script>
 </body>
 

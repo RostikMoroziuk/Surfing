@@ -1,6 +1,7 @@
 @import url("../css/stylesheet.css");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("slick.css");
 $navColor: rgba(11,
 12,
 17,
@@ -129,15 +130,14 @@ input[placeholder],
 
 .r-pagination .glyphicon:hover,
 .boards .glyphicon:hover,
-.input-group .btn,
-.contacts .r-btn  {
+.contacts .r-btn {
   color: $lineColor;
 }
 
 .r-pagination .glyphicon,
 .right-side a,
 .slogan,
-.boards .glyphicon  {
+.boards .glyphicon {
   color: $lightColor;
 }
 
@@ -171,7 +171,6 @@ input[placeholder],
 }
 
 nav.navbar {
-  margin: 0.8% 0;
   margin: 45px 0;
 }
 
@@ -187,8 +186,8 @@ nav.navbar {
 
 .navigation {
   li {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 23px;
+    padding-right: 23px;
   }
   a {
     padding-left: 0 !important;
@@ -215,6 +214,10 @@ nav.navbar {
   align-items: center;
 }
 
+.carousel {
+  width: 100%;
+}
+
 .banner {
   img {
     width: 83%;
@@ -227,6 +230,10 @@ nav.navbar {
 
 .r-pagination {
   bottom: 0;
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
 }
 
 .banner-title {
@@ -248,7 +255,7 @@ nav.navbar {
   align-items: flex-end;
   height: 100%;
   width: 0;
-  right: -3%;
+  right: -1%;
   .caption {
     top: -75px;
   }
@@ -519,6 +526,7 @@ input[placeholder]:-ms-input-placeholder {
   .btn {
     color: white;
     width: 50px;
+    background-color: $lineColor;
   }
 }
 
@@ -577,7 +585,7 @@ input[placeholder]:-ms-input-placeholder {
 @media (max-width: 1354px) {
   .right-side {
     //flex only for social!
-    right: 3%;
+    right: 5%;
     a {
       color: $lightColor;
     }
@@ -720,6 +728,9 @@ input[placeholder]:-ms-input-placeholder {
   .shop {
     margin-bottom: 100px;
   }
+  .right-side {
+    right: 8%;
+  }
   .right-side .caption {
     display: none;
   }
@@ -747,9 +758,6 @@ input[placeholder]:-ms-input-placeholder {
   }
   .slogan {
     font-size: 9px;
-  }
-  .right-side {
-    right: 5%;
   }
   .r-pagination {
     padding: 0;
