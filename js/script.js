@@ -14,12 +14,12 @@ function resizeControll() {
 }
 
 $('.carousel').carousel({
-  interval: 6500
+  interval: false
 })
 
 
 //slick slider
-$('.boards-slider').slick({
+$('.boards').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 3,
   slidesToScroll: 1,
