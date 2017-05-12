@@ -28,25 +28,138 @@ sans-serif;
   box-sizing: border-box;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   background: url("../img/background-water.png") no-repeat 0 1572px, url("../img/surf-bg.png") no-repeat 0 3545px;
   min-width: 320px;
+  max-width: 1440px;
 }
 
 .centering {
-  display: flex;
   justify-content: center;
+}
+
+.text,
+.contacts .inscription {
+  color: $text-color;
+}
+
+.navbar-header .navbar-brand,
+.social,
+.blockquote {
+  padding: 0;
+}
+
+.navigation,
+.slogan,
+.quote-author,
+.r-btn,
+input[placeholder] {
+  font-family: $smallFont;
+}
+
+.navigation,
+.inscription,
+.slogan,
+.quote-author,
+.r-btn,
+input[placeholder],
+.board .board-type {
+  text-transform: uppercase;
+}
+
+.navigation,
+.inscription,
+.quote-author,
+.r-btn,
+input[placeholder] {
+  font-size: 15px;
+}
+
+.navigation,
+.banner-title,
+.slogan,
+.quote-author,
+.r-btn,
+input[placeholder],
+.title {
+  font-weight: 700;
+}
+
+.navigation a,
+.banner-title {
+  color: $navColor;
+}
+
+.image,
+.media-content,
+.boards,
+.board,
+.article-header {
+  position: relative;
+}
+
+.wrapper,
+.centering,
+.right-side,
+.shop-header,
+.boards,
+.board .price,
+.shop-footer,
+.article-first,
+.article-second,
+.contacts,
+.contacts .contact-info,
+.main-footer,
+.main-footer .social {
+  display: flex;
+}
+
+.banner-content,
+.r-pagination,
+.right-side,
+.caption,
+#mvid,
+.board .text,
+.board-image,
+.article-header .title {
+  position: absolute;
+}
+
+.r-pagination .glyphicon:hover,
+.boards .glyphicon:hover,
+.input-group .btn,
+.contacts .r-btn  {
+  color: $lineColor;
+}
+
+.r-pagination .glyphicon,
+.right-side a,
+.slogan,
+.boards .glyphicon  {
+  color: $lightColor;
+}
+
+.inscription,
+.current-page {
+  color: $inscriptionColor;
+}
+
+.blockquote,
+.quote-author,
+.r-btn,
+input[placeholder],
+.title,
+.board .board-name {
+  color: $titleColor;
+}
+
+.banner-title,
+.blockquote,
+.title,
+.boar .board-name {
+  font-family: $titleFont;
 }
 
 .main-header {
@@ -54,7 +167,6 @@ body {
 }
 
 .text {
-  color: $text-color;
   font-size: 16px;
 }
 
@@ -64,7 +176,6 @@ nav.navbar {
 }
 
 .navbar-header .navbar-brand {
-  padding: 0;
   padding-top: 3px;
   height: auto;
   transition: transform 1s;
@@ -75,16 +186,11 @@ nav.navbar {
 }
 
 .navigation {
-  font-family: $smallFont;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 700;
   li {
     padding-left: 24px;
     padding-right: 24px;
   }
   a {
-    color: $navColor; //change bootstrap
     padding-left: 0 !important;
     padding-right: 0 !important;
     transition: color 0.35s;
@@ -101,16 +207,11 @@ nav.navbar {
   }
 }
 
-.image {
-  position: relative;
-}
-
 .base {
   box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2);
 }
 
 .wrapper {
-  display: flex;
   align-items: center;
 }
 
@@ -121,37 +222,15 @@ nav.navbar {
 }
 
 .banner-content {
-  position: absolute;
   z-index: 10;
 }
 
 .r-pagination {
-  position: absolute;
   bottom: 0;
-  .glyphicon:hover {
-    color: $lineColor;
-  }
 }
 
 .banner-title {
-  font-family: $titleFont;
   font-size: 62px;
-  font-weight: 700;
-  color: $navColor;
-}
-
-.inscription {
-  color: $inscriptionColor;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-.r-pagination .glyphicon {
-  color: $lightColor;
-}
-
-.current-page {
-  color: $inscriptionColor;
 }
 
 .v-text {
@@ -166,30 +245,20 @@ nav.navbar {
 
 .right-side {
   //flex only for social!
-  display: flex;
   align-items: flex-end;
   height: 100%;
   width: 0;
-  position: absolute;
   right: -3%;
-  a {
-    color: $lightColor;
-  }
   .caption {
     top: -75px;
   }
 }
 
 .slogan {
-  color: $lightColor;
-  font-family: $smallFont;
-  font-weight: 700; // position: absolute;
   white-space: nowrap; // top: -500px;
-  text-transform: uppercase;
 }
 
 .caption {
-  position: absolute;
   top: 0;
 }
 
@@ -204,35 +273,17 @@ nav.navbar {
 .social {
   list-style: none;
   list-style-position: inside;
-  padding: 0;
 }
 
-// .contacts {
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: nowrap;
-//   justify-content: space-between;
-//   width: 45px;
-//   height: 100%;
-// }
-//end fixme
 .blockquote {
   text-align: center;
   border: none;
-  font-family: $titleFont;
   font-size: 24px;
-  color: $titleColor;
-  padding: 0;
   margin-bottom: 29px;
 }
 
 .quote-author {
-  font-family: $smallFont;
-  color: $titleColor;
-  font-size: 15px;
-  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .quote {
@@ -251,7 +302,6 @@ nav.navbar {
 }
 
 .media-content {
-  position: relative;
   .content {
     text-align: left;
   }
@@ -261,21 +311,11 @@ nav.navbar {
 }
 
 #mvid {
-  position: absolute; //change bootstrap
   top: 50px;
 }
 
 .media-capture .image {
   margin-bottom: 60px;
-}
-
-.r-btn,
-input[placeholder] {
-  font-family: $smallFont;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: $titleColor;
 }
 
 input[placeholder]::-webkit-input-placeholder {
@@ -319,7 +359,6 @@ input[placeholder]:-ms-input-placeholder {
 }
 
 .shop-header {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 175px;
@@ -329,23 +368,14 @@ input[placeholder]:-ms-input-placeholder {
 }
 
 .title {
-  font-family: $titleFont;
-  color: $titleColor;
   font-size: 42px;
-  font-weight: 700;
 }
 
 .boards {
-  position: relative;
-  display: flex;
   justify-content: flex-start;
   margin-bottom: 80px;
   .glyphicon {
-    color: $lightColor;
     align-self: center;
-    &:hover {
-      color: $lineColor;
-    }
   }
 }
 
@@ -354,9 +384,7 @@ input[placeholder]:-ms-input-placeholder {
   height: 320px;
   margin-right: 15%;
   background-color: $boardColor;
-  position: relative;
   .text {
-    position: absolute;
     left: 190px;
     top: 75px;
   }
@@ -364,24 +392,19 @@ input[placeholder]:-ms-input-placeholder {
     font-family: $textFont;
     color: #7a7a7a;
     font-size: 12px;
-    text-transform: uppercase;
   }
   .board-name {
-    font-family: $titleFont;
-    color: $titleColor;
     font-size: 26px;
     font-weight: 400;
     white-space: nowrap
   }
   .price {
     margin-top: 38px;
-    display: flex;
     justify-content: center;
   }
 }
 
 .board-image {
-  position: absolute;
   bottom: 0;
 }
 
@@ -391,11 +414,6 @@ input[placeholder]:-ms-input-placeholder {
 
 .shop {
   margin-bottom: 173px;
-  .left,
-  .right {
-    display: block;
-    position: relative;
-  }
 }
 
 .shop .left {
@@ -407,17 +425,11 @@ input[placeholder]:-ms-input-placeholder {
 }
 
 .shop-footer {
-  display: flex;
   justify-content: center;
 }
 
 .page-info {
   margin-bottom: 110px;
-}
-
-.article-first,
-.article-second {
-  display: flex;
 }
 
 .article-content,
@@ -468,9 +480,7 @@ input[placeholder]:-ms-input-placeholder {
   height: 136px;
   margin-top: 15px;
   margin-bottom: 34px;
-  position: relative;
   .title {
-    position: absolute;
     bottom: 0;
     padding-bottom: 11px;
     &:first-letter {
@@ -504,7 +514,6 @@ input[placeholder]:-ms-input-placeholder {
     background-color: #f5f5f5;
   }
   .btn {
-    background-color: $lineColor;
     color: white;
     width: 50px;
   }
@@ -519,14 +528,12 @@ input[placeholder]:-ms-input-placeholder {
 }
 
 .contacts {
-  display: flex;
   margin-bottom: 98px;
   .image {
     width: 50%;
     margin-right: 44px;
   }
   .contact-info {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     width: 34%;
@@ -535,16 +542,9 @@ input[placeholder]:-ms-input-placeholder {
     margin: 55px 0 55px 45px;
     line-height: 46px;
   }
-  .inscription {
-    color: $text-color;
-  }
-  .r-btn {
-    color: $lineColor;
-  }
 }
 
 .main-footer {
-  display: flex;
   flex-direction: column;
   align-items: center;
   .brand {
@@ -554,7 +554,6 @@ input[placeholder]:-ms-input-placeholder {
     margin-bottom: 40px;
   }
   .social {
-    display: flex;
     margin-bottom: 95px;
     li {
       margin: 0 20px;
@@ -572,7 +571,6 @@ input[placeholder]:-ms-input-placeholder {
 /*Media query*/
 
 //Large
-
 @media (max-width: 1354px) {
   .right-side {
     //flex only for social!
