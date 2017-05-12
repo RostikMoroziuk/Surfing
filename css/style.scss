@@ -1,7 +1,7 @@
-@import url("../css/stylesheet.css");
+@import url("../css/stylesheet");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url("slick.css");
+@import url("../css/slick.css");
 $navColor: rgba(11,
 12,
 17,
@@ -371,7 +371,7 @@ input[placeholder]:-ms-input-placeholder {
 .shop-header {
   flex-direction: column;
   align-items: center;
-  margin-bottom: 175px;
+  margin-bottom: 0;
   .title {
     margin-top: 0;
   }
@@ -384,9 +384,15 @@ input[placeholder]:-ms-input-placeholder {
 .boards {
   justify-content: flex-start;
   margin-bottom: 80px;
+  height: 495px;
   .glyphicon {
     align-self: center;
+    top: 88px;
   }
+}
+
+.slick-track {
+  top: 175px;
 }
 
 .board {
