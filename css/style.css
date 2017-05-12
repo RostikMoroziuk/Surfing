@@ -203,6 +203,8 @@ nav.navbar {
 .social {
   list-style: none;
   list-style-position: inside; }
+  .social a {
+    padding: 5px; }
 
 .blockquote {
   text-align: center;
@@ -218,9 +220,9 @@ nav.navbar {
 
 .line {
   height: 100px;
-  border-right: 2px solid #5da8ef;
   margin-bottom: 50px;
-  width: 50%; }
+  width: 2px;
+  background-color: #5da8ef; }
 
 .media {
   margin-bottom: 200px; }
