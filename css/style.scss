@@ -676,7 +676,7 @@ input[placeholder]:-ms-input-placeholder {
     margin: 0;
   }
   .article-first .article-image {
-    margin-top: 10px;
+    margin-top: 40px;
     width: 80%;
   }
   .article-second .article-image {
@@ -734,9 +734,6 @@ input[placeholder]:-ms-input-placeholder {
     .text {
       font-size: 15px;
       overflow: hidden;
-      // text-overflow: ellipsis;
-      // display: block;
-      // white-space: nowrap;
     }
     br {
       display: none;
@@ -762,7 +759,7 @@ input[placeholder]:-ms-input-placeholder {
     font-size: 20px;
   }
   .board .text {
-    right: auto;
+    left: 0;
     top: auto;
     bottom: -70px;
   }
