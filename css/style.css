@@ -415,7 +415,7 @@ input[placeholder]:-ms-input-placeholder {
         color: #5da8ef; }
 
 /*Media query*/
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   body .container {
     padding: 0;
     width: 1224px; } }
@@ -528,7 +528,10 @@ input[placeholder]:-ms-input-placeholder {
     margin-bottom: 40px; }
 
   .shop {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+
+  .right-side .caption {
+    display: none; } }
 @media (max-width: 450px) {
   .inscription {
     font-size: 9px; }
@@ -545,16 +548,14 @@ input[placeholder]:-ms-input-placeholder {
   .right-side {
     right: 5%; }
 
-  .right-side .caption {
-    display: none; }
-
   .r-pagination {
     padding: 0; }
 
   .blockquote {
     font-size: 18px; }
 
-  .r-btn, input[placeholder] {
+  .r-btn,
+  input[placeholder] {
     font-size: 9px; }
 
   .title {

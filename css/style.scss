@@ -564,7 +564,7 @@ input[placeholder]:-ms-input-placeholder {
 
 /*Media query*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   body .container {
     padding: 0;
     width: 1224px;
@@ -706,6 +706,9 @@ input[placeholder]:-ms-input-placeholder {
   .shop {
     margin-bottom: 100px;
   }
+  .right-side .caption {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
@@ -724,16 +727,14 @@ input[placeholder]:-ms-input-placeholder {
   .right-side {
     right: 5%;
   }
-  .right-side .caption {
-    display: none;
-  }
   .r-pagination {
     padding: 0;
   }
   .blockquote {
     font-size: 18px;
   }
-  .r-btn, input[placeholder] {
+  .r-btn,
+  input[placeholder] {
     font-size: 9px;
   }
   .title {
@@ -760,6 +761,7 @@ input[placeholder]:-ms-input-placeholder {
     font-size: 18px;
   }
   .contacts .address {
-    line-height: 25px;;
+    line-height: 25px;
+    ;
   }
 }
