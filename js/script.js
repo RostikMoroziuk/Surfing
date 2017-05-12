@@ -16,13 +16,3 @@ function resizeControll() {
 $('.carousel').carousel({
   interval: 6500
 })
-
-
-//slick slider
-// $('.boards').slick({
-//   lazyLoad: 'ondemand',
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000
-// });
