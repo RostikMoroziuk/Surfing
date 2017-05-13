@@ -212,6 +212,8 @@ nav.navbar {
   list-style-position: inside; }
   .social a {
     padding: 5px; }
+  .social a:hover {
+    color: #5da8ef; }
 
 .blockquote {
   text-align: center;
