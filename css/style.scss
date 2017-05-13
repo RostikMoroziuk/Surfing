@@ -1,7 +1,9 @@
 @import url("../css/stylesheet.css");
+@import url("https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url("../css/slick.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
 $navColor: rgba(11,
 12,
 17,
@@ -305,6 +307,8 @@ nav.navbar {
   margin-bottom: 50px;
   width: 2px;
   background-color: $lineColor;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .media {
@@ -584,6 +588,25 @@ input[placeholder]:-ms-input-placeholder {
   }
 }
 
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-pause {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  bottom: 50%;
+  transform: translateY(50%);
+  :enabled {
+    outline: none;
+    border: none;
+  }
+}
+
 
 /*Media query*/
 
@@ -714,6 +737,9 @@ input[placeholder]:-ms-input-placeholder {
   .contacts .contact-info {
     width: 50%;
   }
+  .shop {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -745,9 +771,21 @@ input[placeholder]:-ms-input-placeholder {
   .right-side .caption {
     display: none;
   }
+  .page-info {
+    margin-bottom: 30px;
+  }
+  .line {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 480px) {
+  .main-header,
+  .article-first,
+  .club,
+  .contacts {
+    margin-bottom: 50px;
+  }
   .inscription {
     font-size: 9px;
   }
@@ -802,5 +840,8 @@ input[placeholder]:-ms-input-placeholder {
   .contacts .address {
     line-height: 25px;
     ;
+  }
+  .line {
+    display: none;
   }
 }

@@ -1,7 +1,9 @@
 @import url("../css/stylesheet.css");
+@import url("https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("../css/slick.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
 * {
   box-sizing: border-box; }
 
@@ -227,7 +229,9 @@ nav.navbar {
   height: 100px;
   margin-bottom: 50px;
   width: 2px;
-  background-color: #5da8ef; }
+  background-color: #5da8ef;
+  margin-left: auto;
+  margin-right: auto; }
 
 .media {
   margin-bottom: 200px; }
@@ -437,6 +441,22 @@ input[placeholder]:-ms-input-placeholder {
       .main-footer .social a:hover {
         color: #5da8ef; }
 
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#play-pause {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  bottom: 50%;
+  transform: translateY(50%); }
+  #play-pause :enabled {
+    outline: none;
+    border: none; }
+
 /*Media query*/
 @media (max-width: 1354px) {
   .right-side {
@@ -538,7 +558,10 @@ input[placeholder]:-ms-input-placeholder {
     line-height: 20px; }
 
   .contacts .contact-info {
-    width: 50%; } }
+    width: 50%; }
+
+  .shop {
+    margin-bottom: 30px; } }
 @media (max-width: 640px) {
   .banner-title {
     font-size: 33px;
@@ -566,8 +589,20 @@ input[placeholder]:-ms-input-placeholder {
     right: 8%; }
 
   .right-side .caption {
-    display: none; } }
+    display: none; }
+
+  .page-info {
+    margin-bottom: 30px; }
+
+  .line {
+    margin-bottom: 30px; } }
 @media (max-width: 480px) {
+  .main-header,
+  .article-first,
+  .club,
+  .contacts {
+    margin-bottom: 50px; }
+
   .inscription {
     font-size: 9px; }
 
@@ -615,6 +650,9 @@ input[placeholder]:-ms-input-placeholder {
     font-size: 18px; }
 
   .contacts .address {
-    line-height: 25px; } }
+    line-height: 25px; }
+
+  .line {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
